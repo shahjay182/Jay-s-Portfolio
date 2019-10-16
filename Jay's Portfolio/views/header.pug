@@ -1,0 +1,50 @@
+﻿doctype html
+head
+  // Meta
+  title Jay's Portfolio
+  // Fonts
+  link(href='https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic' rel='stylesheet')
+  link(rel='stylesheet' href='../stylesheets/min-styles.css')
+  link(rel='stylesheet' href='../stylesheets/fontawesome.css')
+  link(rel='stylesheet' href='../stylesheets/brands.css')
+  link(rel='stylesheet' href='../stylesheets/solid.css')
+  link(rel='shortcut icon' href='images/favicons/favicon.ico')
+  // Preloader
+.preloader
+  .centrize.full-width
+    .vertical-center
+      .spinner
+        .double-bounce1
+        .double-bounce2
+// Container
+.container
+  // Cursor
+  .cursor-follower
+  // Header
+  header.header
+    .head-top
+      // menu button
+      a.menu-btn(href='#')
+        span
+      // logo
+      .logo.hover-masks-logo
+        a(href='#')
+          span.mask-lnk
+            | Jay 
+            strong Shah
+          span.mask-lnk.mask-lnk-hover
+            | Download 
+            strong CV
+      // top menu
+      .top-menu.hover-masks
+        .top-menu-nav
+          .menu-topmenu-container
+            ul.menu
+              li.menu-item.current-menu-item
+                a(href='/') Home
+              li.menu-item.current-menu-item
+                a(href='/resume') Resume
+              li.menu-item.current-menu-item
+                a(href='/work') Works
+              li.menu-item.current-menu-item
+                a(href='/contact') Contact

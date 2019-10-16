@@ -1,0 +1,214 @@
+﻿doctype html
+head
+  // Meta
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
+  meta(name='description' content='CV & Resume Template')
+  meta(name='keywords' content='vcard, resposnive, resume, personal, card, cv, cvio, portfolio')
+  meta(name='author' content='beshleyua')
+  // Title
+  title Cvio - Resume/CV Template
+  // Fonts
+  link(href='https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic' rel='stylesheet')
+  link(rel='stylesheet' href='css/min-styles.css')
+  link(rel='stylesheet' href='css/fontawesome.css')
+  link(rel='stylesheet' href='css/brands.css')
+  link(rel='stylesheet' href='css/solid.css')
+  //if lt IE 9
+    script(src='http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js')
+    script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+  link(rel='shortcut icon' href='images/favicons/favicon.ico')
+  // Global site tag (gtag.js) - Google Analytics
+  script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-125314689-9')
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-125314689-9');
+// Preloader
+.preloader
+  .centrize.full-width
+    .vertical-center
+      .spinner
+        .double-bounce1
+        .double-bounce2
+// Container
+.container
+  // Cursor
+  .cursor-follower
+  // Header
+  header.header
+    .head-top
+      // menu button
+      a.menu-btn(href='#')
+        span
+      // logo
+      .logo.hover-masks-logo
+        a(href='#')
+          span.mask-lnk
+            | Alejandro 
+            strong Abeyta
+          span.mask-lnk.mask-lnk-hover
+            | Download 
+            strong CV
+      // top menu
+      .top-menu.hover-masks
+        .top-menu-nav
+          .menu-topmenu-container
+            ul.menu
+              li.menu-item.menu-item-has-children
+                a(href='index.html') Home
+                ul.sub-menu
+                  li.menu-item
+                    a(href='index.html') Home Default
+                  li.menu-item
+                    a(href='index_creative.html') Home Creative
+                  li.menu-item
+                    a(href='index_slider.html') Home Slider
+                  li.menu-item
+                    a(href='index_personal.html') Home Personal
+                  li.menu-item
+                    a(href='index_onepage.html' target='blank') Home OnePage
+                  li.menu-item
+                    a(href='index_image.html') Home Image
+                  li.menu-item
+                    a(href='index_video.html') Home Video
+              li.menu-item.menu-item-has-children
+                a(href='resume.html') Resume
+                ul.sub-menu
+                  li.menu-item
+                    a(href='resume.html') Resume Default
+                  li.menu-item
+                    a(href='resume_image.html') Resume Image
+                  li.menu-item
+                    a(href='resume_creative.html') Resume Creative
+              li.menu-item.menu-item-has-children
+                a(href='works.html') Works
+                ul.sub-menu
+                  li.menu-item
+                    a(href='works.html') Works Default
+                  li.menu-item
+                    a(href='works_creative.html') Works Creative
+                  li.menu-item
+                    a(href='work_single.html') Work Single
+                  li.menu-item
+                    a(href='work_single_image.html') Work Single Image
+                  li.menu-item
+                    a(href='work_single_creative.html') Work Single Creative
+              li.menu-item.menu-item-has-children.current-menu-item
+                a(href='contacts.html') Contact
+                ul.sub-menu
+                  li.menu-item
+                    a(href='contacts.html') Contact Default
+                  li.menu-item.current-menu-item
+                    a(href='contacts_map.html') Contact Map
+                  li.menu-item
+                    a(href='contacts_image.html') Contact Image
+                  li.menu-item
+                    a(href='contacts_creative.html') Contact Creative
+  // Wrapper
+  .wrapper
+    // Section Started
+    #section-started.section.started.section-title
+      // background
+      .video-bg
+        #map.map
+        .video-bg-mask
+        #grained_container.video-bg-texture
+      // started content
+      .centrize.full-width
+        .vertical-center
+          .started-content
+            h1.h-title Contacts
+            .h-subtitles
+              .h-subtitle.typing-bread
+                p.breadcrumbs
+                  a(href='index.html') Home
+                  |  / Contacts
+              span.typed-bread
+      // mosue button
+      a.mouse_btn(href='#' style='display: none;')
+        span.icon.fas.fa-chevron-down
+    // Section Contacts Info
+    #section-contacts-info.section.contacts
+      .content
+        // title
+        .title
+          .title_inner Contacts Info
+        // contacts items
+        .service-items
+          .service-col
+            .service-item.content-box
+              .icon
+                span.fas.fa-phone
+              .name Phone
+              .text + (231) 456 67 89
+          .service-col
+            .service-item.content-box
+              .icon
+                span.fas.fa-envelope
+              .name Email
+              .text
+                a(href='mailto:steve-pearson@gmail.com') steve-pearson@gmail.com
+          .service-col
+            .service-item.content-box
+              .icon
+                span.fas.fa-map-marker-alt
+              .name Address
+              .text 2621 W Pico Blvd, Los Angeles
+          .service-col
+            .service-item.content-box
+              .icon
+                span.fas.fa-user-tie
+              .name Freelance Available
+              .text I am available for Freelance hire
+        .clear
+    // Section Contacts Form
+    #section-contacts.section.contacts
+      .content
+        // title
+        .title
+          .title_inner Contacts Form
+        // form
+        .contact_form.content-box
+          form#cform(method='post')
+            .group-val
+              input(type='text' name='name' placeholder='Name')
+            .group-val
+              input(type='email' name='email' placeholder='Email')
+            .group-val.ct-gr
+              textarea(name='message' placeholder='Message')
+            .group-bts
+              button.btn.hover-animated(type='submit')
+                span.circle
+                span.lnk Send Message
+          .alert-success
+            p Thanks, your message is sent successfully.
+      .clear
+  // Footer
+  footer.footer
+    .copy
+      p E: alejandroa@gmail.com
+      p T: +1 (234) 567 80 98
+    .soc-box
+      .follow-label Follow Me
+      .soc
+        a(target='_blank' href='https://www.pinterest.com/')
+          span.icon.fab.fa-pinterest
+        a(target='_blank' href='https://www.instagram.com/')
+          span.icon.fab.fa-instagram
+        a(target='_blank' href='https://dribbble.com/')
+          span.icon.fab.fa-dribbble
+    .clear
+  // Lines
+  .lines
+    .line-col
+    .line-col
+    .line-col
+    .line-col
+    .line-col
+// Google map api
+script(type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDz2w7HUaWudHwd7AWQpCL48Qs050WOn9s')
+script(src='js/min.scripts.js')
+script(src='js/demo-bar.js')
+// Mirrored from bslthemes.com/cvio/demo/contacts_map.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Oct 2019 00:35:14 GMT

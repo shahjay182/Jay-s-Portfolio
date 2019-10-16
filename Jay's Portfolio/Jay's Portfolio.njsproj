@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Jay's Portfolio</Name>
+    <RootNamespace>Jay's Portfolio</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>64498490-b3ea-400d-957b-b2cc52d89765</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="app.js" />
+    <Content Include="public\images\client1.png" />
+    <Content Include="public\images\client2.png" />
+    <Content Include="public\images\client3.png" />
+    <Content Include="public\images\client4.png" />
+    <Content Include="public\images\man.jpg" />
+    <Content Include="public\images\man2.jpg" />
+    <Content Include="public\images\resume_bg.jpg" />
+    <Content Include="public\images\rev1.jpg" />
+    <Content Include="public\images\started_image.jpg" />
+    <Content Include="public\images\started_image2.jpg" />
+    <Content Include="public\images\started_image3.jpg" />
+    <Content Include="public\images\started_image4.jpg" />
+    <Content Include="public\images\started_image_p.jpg" />
+    <Content Include="public\images\team1.jpg" />
+    <Content Include="public\images\team2.jpg" />
+    <Content Include="public\images\work1.jpg" />
+    <Content Include="public\images\work2.jpg" />
+    <Content Include="public\images\work3.jpg" />
+    <Content Include="public\images\work4.jpg" />
+    <Content Include="public\images\work5.jpg" />
+    <Content Include="public\images\work6.jpg" />
+    <Content Include="public\images\work7.jpg" />
+    <Content Include="public\images\work8.jpg" />
+    <Content Include="public\images\works_single.jpg" />
+    <Content Include="public\javascripts\demo-bar.js" />
+    <Content Include="public\javascripts\grained.html" />
+    <Content Include="public\javascripts\imagesloaded.pkgd.html" />
+    <Content Include="public\javascripts\isotope.pkgd.html" />
+    <Content Include="public\javascripts\jarallax-element.html" />
+    <Content Include="public\javascripts\jarallax-video.html" />
+    <Content Include="public\javascripts\jarallax.html" />
+    <Content Include="public\javascripts\jquery.min.html" />
+    <Content Include="public\javascripts\jquery.validate.html" />
+    <Content Include="public\javascripts\magnific-popup.html" />
+    <Content Include="public\javascripts\min.scripts.js" />
+    <Content Include="public\javascripts\scripts.js" />
+    <Content Include="public\javascripts\simpleParallax.html" />
+    <Content Include="public\javascripts\swiper.html" />
+    <Content Include="public\javascripts\typed.html" />
+    <Content Include="public\stylesheets\assets\images\android-search.html" />
+    <Content Include="public\stylesheets\assets\images\pag.html" />
+    <Content Include="public\stylesheets\brands.css" />
+    <Content Include="public\stylesheets\fontawesome.css" />
+    <Content Include="public\stylesheets\main.css" />
+    <Content Include="public\stylesheets\min-styles.css" />
+    <Content Include="public\stylesheets\solid.css" />
+    <Content Include="public\webfonts\fa-brands-400.eot" />
+    <Content Include="public\webfonts\fa-brands-400.svg" />
+    <Content Include="public\webfonts\fa-brands-400.ttf" />
+    <Content Include="public\webfonts\fa-brands-400.woff" />
+    <Content Include="public\webfonts\fa-brands-400.woff2" />
+    <Content Include="public\webfonts\fa-brands-400d41d.eot" />
+    <Content Include="public\webfonts\fa-solid-900.eot" />
+    <Content Include="public\webfonts\fa-solid-900.svg" />
+    <Content Include="public\webfonts\fa-solid-900.ttf" />
+    <Content Include="public\webfonts\fa-solid-900.woff" />
+    <Content Include="public\webfonts\fa-solid-900.woff2" />
+    <Content Include="public\webfonts\fa-solid-900d41d.eot" />
+    <Content Include="routes\work.js" />
+    <Content Include="routes\project.js" />
+    <Content Include="routes\contact.js" />
+    <Content Include="routes\resume.js" />
+    <Content Include="routes\index.js" />
+    <Content Include="routes\users.js" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="views\contact.pug" />
+    <Content Include="views\footer.pug" />
+    <Content Include="views\header.pug" />
+    <Content Include="views\project.pug" />
+    <Content Include="views\resume.pug" />
+    <Content Include="views\work.pug" />
+    <Content Include="views\index.pug" />
+    <Content Include="views\layout.pug" />
+    <Content Include="views\error.pug" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\images\favicons\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="public\stylesheets\assets\" />
+    <Folder Include="public\stylesheets\assets\images\" />
+    <Folder Include="public\webfonts\" />
+    <Folder Include="routes\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
