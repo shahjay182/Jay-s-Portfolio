@@ -1,5 +1,37 @@
-﻿extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+﻿include header
+// Wrapper
+.wrapper
+  // Section Started
+  #section-started.section.started
+    // background
+    .video-bg
+      .video-bg-mask
+      #grained_container.video-bg-texture
+      // slider
+      .started-carousel
+        .swiper-container
+          .swiper-wrapper
+            .swiper-slide.first
+              .main-img(style='background-image: url(images/started_image.jpg);')
+            .swiper-slide
+              .main-img(style='background-image: url(images/started_image2.jpg);')
+            .swiper-slide
+              .main-img(style='background-image: url(images/started_image3.jpg);')
+            .swiper-slide
+              .main-img(style='background-image: url(images/started_image4.jpg);')
+    // slider navigation
+    .swiper-nav
+      a.prev.swiper-button-prev.fas.fa-long-arrow-alt-left
+      a.next.swiper-button-next.fas.fa-long-arrow-alt-right
+    // started content
+    .centrize.full-width
+      .vertical-center
+        .started-content
+          h1.h-title Coming Soon
+          .h-subtitles
+            .h-subtitle.typing-bread
+              p.breadcrumbs
+                a(href='https://github.com/shahjay182') Check out my github account
+            span.typed-bread
+       
+    include footer
